@@ -33,11 +33,6 @@ A program that applies filters to BMPs, per the below.
 $ ./filter -r image.bmp reflected.bmp
 ```
 
-<!-- <p>
-  <img src=./assets/yard50.png alt="Snow" />
-  <img src=./assets/filters2.png alt="Mountains" />
-</p> -->
-
 Example of a image and the 5 filters applied:
 
 <p align="center">
@@ -49,15 +44,15 @@ Example of a image and the 5 filters applied:
 
 The program can apply `5` filters to bitmap images: 
 
-- `Grayscale`:  takes an image and turn it into a black-and-white version of the same image.
+- `Grayscale`:  take an image and turn it into a black-and-white version of the same image.
 
-- `Sepia`: takes an image and turn it into a sepia version of the same image.
+- `Sepia`: take an image and turn it into a sepia version of the same image.
 
-- `Reflection`: takes an image and reflect it horizontally.
+- `Reflection`: take an image and reflect it horizontally.
 
-- `Blur`: takes an image and turn it into a box-blurred version of the same image.
+- `Blur`: take an image and turn it into a box-blurred version of the same image.
 
-- `Edges`: takes an image and highlight the edges between objects, according to the Sobel operator.
+- `Edges`: take an image and highlight the edges between objects, according to the Sobel operator.
 
 The program should accept exactly three command-line arguments:
 
