@@ -136,13 +136,6 @@ int main(void)
                 return 0;
             }
         }
-
-        // If number is valid but do not fit any condition
-        else
-        {
-            printf("INVALID\n");
-            return 0;
-        }
     }
 
     // If number is not valid

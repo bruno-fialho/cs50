@@ -15,7 +15,7 @@ float S;
 int main(void)
 {
 
-    // Prompt for a card number
+    // Prompt for a text
     string text = get_string("Text: ");
 
 
