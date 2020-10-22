@@ -1,0 +1,42 @@
+.box-top {
+    background-color: #f3f3f1;
+    color: #a51c30;
+    padding: 5px;
+}
+
+h2, h4, h5 {
+    color: #a51c30;
+}
+
+.img-container {
+    padding: 20px;
+}
+
+img {
+    max-width: 530px;
+    align-items: center;
+
+}
+
+p > code, li > code {
+    margin: 0;
+    padding: 2.72px 5.44px;
+    border-radius: 6px;
+    font-size: 85%;
+    color: #24292e;
+    background-color: #f6f8fa;
+}
+
+pre {
+    width: 100%;
+    display: inline-block;
+    background-color: #f6f8fa;
+    /*white-space: pre-line;*/
+}
+
+#to-top-btn {
+    display: block;
+    margin: auto;
+    width: 120px;
+    background-color: #a51c30;
+  }

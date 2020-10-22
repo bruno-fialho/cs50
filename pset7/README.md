@@ -17,7 +17,7 @@ Two problems in Python and SQL:
 - [Movies](#desktop_computer-movies)
 - [Houses](#desktop_computer-houses)
 
-## :desktop_computer: [Movies](https://cs50.harvard.edu/x/2020/psets/6/movies/)
+## :desktop_computer: [Movies](https://cs50.harvard.edu/x/2020/psets/7/movies/)
 
 These are SQL queries to answer questions about a database of movies.
 
@@ -131,7 +131,7 @@ SELECT name FROM people WHERE NOT name="Kevin Bacon" AND id IN
 (SELECT id FROM people WHERE name="Kevin Bacon" AND birth="1958")))
 ```
 
-## :desktop_computer: [Houses](https://cs50.harvard.edu/x/2020/psets/6/houses/)
+## :desktop_computer: [Houses](https://cs50.harvard.edu/x/2020/psets/7/houses/)
 
 A program to import student data into a database, and then produce class rosters.
 
