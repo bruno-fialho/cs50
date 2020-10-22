@@ -25,12 +25,12 @@ Two webpages using HTML, CSS, [Bootstrap](https://getbootstrap.com/), Javascript
 - [Homepage](#desktop_computer-homepage)
 - [Finances](#desktop_computer-finances) :construction:
 
-## :desktop_computer: [Homepage](https://cs50.harvard.edu/x/2020/psets/8/homepage/)
+## :desktop_computer: [Homepage](https://cs50.harvard.edu/x/2020/tracks/web/homepage/)
 
 A simple homepage using HTML, CSS, Bootstrap and JavaScript.
 
 ![Homepage](./homepage/assets/homepage.gif)
 
-## :desktop_computer: [Finance](https://cs50.harvard.edu/x/2020/psets/8/finance/)
+## :desktop_computer: [Finance](https://cs50.harvard.edu/x/2020/tracks/web/finance/)
 
 :construction:
