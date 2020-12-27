@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4">Final Project</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="/credit">
+                    <i class="far fa-credit-card"></i>
+                </a>
+                <h3>Credit</h3>
+                <p>Check if a credit card number is valid</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="/readability">
+                    <i class="far fa-file-alt"></i>
+                </a>
+                <h3>Readability</h3>
+                <p>Check the grade level of a text</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a href="/filters">
+                    <i class="far fa-image"></i>
+                </a>
+                <h3>Filter</h3>
+                <p>Apply filters to your photos</p>
+            </div>
+            <hr class="my-4">
+        </div>
+    </div>
+{% endblock %}

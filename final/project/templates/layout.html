@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50 Portfolio: {% block title %}{% endblock %}</title>
+    
+    <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+    <link href="/static/style.css" rel="stylesheet">
+
+    <script>
+    // Navbar toggle
+    $(function() {
+        var toggler = document.getElementById('toggleButton');
+        
+        $(toggler).click(function() {
+            $(this).toggleClass('is-active');
+        })
+    })
+    
+    // Hide flash message after 5 seconds
+    $(document).ready(function(){
+        setTimeout(function() {
+            $("#alertMessage").hide('blind', {}, 5000)
+        }, 5000);
+    });
+    </script>
+
+    <!-- Script block for readability -->
+    {% block script %}{% endblock %}
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">
+            <img src="/static/assets/rubber-duck.png" id="duck" alt="rubberduck">
+            <span>CS50 Final Project</span>
+        </a>
+        <button id="toggleButton" class="navbar-toggler" type="button" 
+        data-toggle="collapse" data-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">   
+                <i class="fa-bars"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/credit">Credit</a>
+            <a class="nav-item nav-link" href="/readability">Readability</a>
+            <a class="nav-item nav-link" href="/filters">Filters</a>
+          </div>
+        </div>
+      </nav>
+
+    
+
+    <!-- Main -->
+    <main class="container-fluid">
+        <!-- Flash Messages -->
+        {% if get_flashed_messages() %}
+            <div id="alertMessage" class="container-fluid alert text-center" role="alert">
+                {{ get_flashed_messages() | join(" ") }}
+            </div>
+        {% endif %}
+
+        {% block main %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid padding text-center">
+            <p>
+                Made with &#128156; by 
+                <a href="https://github.com/bruno-fialho" class="github-link">
+                    Bruno Fialho
+                </a>
+                <br>
+                under 
+                <a href="https://github.com/bruno-fialho/cs50/blob/master/LICENSE"
+                    class="licence-link">
+                    MIT licence
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

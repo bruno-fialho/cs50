@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Filters
+{% endblock %}
+
+{% block main %}
+    <h3>Image Filters</h3>
+
+    <form action="/filters" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="formControlFile">Select image</label>
+            <input type="file" name="file" class="form-control-file" id="formControlFile" accept="image/*.bmp" required>
+        </div>
+
+        <label for="filterRadios">Select filter</label>
+        <div class="form-group" id="filterRadios">
+            <div class="custom-control custom-radio">
+                <input type="radio" id="grayscale" name="customRadio" value="grayscale" class="custom-control-input">
+                <label class="custom-control-label" for="grayscale">Grayscale</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="reflect" name="customRadio" value="reflect" class="custom-control-input">
+                <label class="custom-control-label" for="reflect">Reflect</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="sepia" name="customRadio" value="sepia" class="custom-control-input">
+                <label class="custom-control-label" for="sepia">Sepia</label>
+            </div>
+        </div>
+
+        <button class="btn submit-btn" type="submit">Apply Filter</button>
+    </form>
+
+{% endblock %}

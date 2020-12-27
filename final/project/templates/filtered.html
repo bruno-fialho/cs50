@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Filtered
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <h3 style="margin: 0 auto 20px">{{ filtername }}</h3>
+        </div>
+    </div>
+
+    <div class="container-fluid filtered-img">
+        <img src="{{ url_for('display_image', filename=filename) }}" alt="Filename" class="img-fluid">
+        <br>
+        <a href="/filters">
+            <button type="button" class="btn back-btn">Try Again</button>
+        </a>
+
+    </div>
+    
+    <div class="container-fluid">
+    </div>
+
+{% endblock %}

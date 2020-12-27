@@ -1,0 +1,276 @@
+/* Global */
+* {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+/* body */
+body {
+    width: 100%;
+    height: auto;
+    color: #f2f2f2;
+    background-color: #44475a;
+}
+
+/* main */
+main {
+    position: relative;
+    padding: 60px 60px 80px 60px !important;
+}
+
+/* Title colors */
+h1 {
+    font-weight: 600 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #bd93f9;
+    margin: 0 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #282a36;
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f2f2f2 !important;
+}
+
+.navbar a:hover  {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #bd93f9 !important;
+}
+
+img#duck {
+    padding: 5px 0;
+}
+
+.navbar-brand span {
+    padding: 12.5px 0;
+}
+
+/* text */
+p {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+
+/* Text links */
+p a.github-link {
+    text-decoration: none;
+    color: #8aff80;
+}
+
+p a.github-link:hover {
+    text-decoration: none;
+    color: rgba(138, 255, 128, 0.6);
+}
+
+p a.licence-link {
+    text-decoration: none;
+    color: #ffb86c;
+}
+
+p a.licence-link:hover {
+    text-decoration: none;
+    color: rgba(255, 184, 108, 0.6)
+}
+
+/* Alert */
+.alert {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    background-color:  #8aff80;
+    color: #282a36;
+    border: none;
+    border-radius: 0px;
+}
+
+/* Footer */
+Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #282a36;
+}
+
+Footer p {
+    margin: 0.5rem 0;
+}
+
+/* Custom icons */
+.fa-credit-card, .fa-file-alt, .fa-image {
+    font-size: 4em;
+    margin: 1rem;
+    color: #f2f2f2;
+}
+
+.fa-credit-card:hover,
+.fa-file-alt:hover,
+.fa-image:hover {
+    color: rgba(242,242,242, 0.6);
+}
+
+/* Input and textarea margins */
+input, textarea {
+    margin: 0 0 1rem;
+}
+
+/* Custom input and text area */
+input.form-control, input.form-control-file, textarea.form-control {
+    background-color: #282a36;
+    color: #f2f2f2;
+    border: 1px solid #bd93f9;
+}
+
+/* Custom input and textarea focus */
+input[type="number"]:focus,
+input[type="file"]:focus,
+textarea[type="text"]:focus {
+    background-color: #282a36;
+    color: #f2f2f2; 
+    border-color: rgba(138, 255, 128, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(138, 255, 128, 0.6);
+    outline: none;
+}
+
+/* Custom radio button */
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #8be9fd;
+}
+
+.custom-control-input:focus~.custom-control-label::before,
+.custom-control-input:hover~.custom-control-label::before {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px rgba(139, 233, 253, 0.6);
+}
+
+/* button margins */
+button {
+    margin: 0 1rem 1rem 0;
+}
+
+Button#toggleButton {
+    margin: 0;
+}
+
+/* Custom buttons */
+button.submit-btn {
+    background-color: #8aff80;
+    font-family: Fira Code, monospace;
+}
+
+button.submit-btn:hover {
+    background-color: rgba(138, 255, 128, 0.6);
+}
+
+button.submit-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button.random-btn, button.back-btn {
+    background-color: #ff79c6;
+    font-family: Fira Code, monospace;
+}
+
+button.back-btn {
+    margin: 0;
+}
+
+button.random-btn:hover, button.back-btn:hover {
+    background-color: rgba(255, 121, 198, 0.6);
+}
+
+button.random-btn:focus, button.back-btn:focus  {
+    box-shadow: none;
+    outline: none;
+}
+
+div.filtered-img {
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 20px;
+}
+
+div.filtered-img img {
+    padding: 0 0 20px 0;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px)  {
+    main {
+        position: relative;
+        padding: 50px 50px 80px 50px !important;
+    }
+
+    h1.display-4 {
+        font-size: 2.5rem;
+        font-weight: 400 !important;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 0.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin: 0 0 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        position: relative;
+        padding: 40px 40px 80px 40px !important;
+    }
+    h1.display-4 {
+        font-size: 1.8rem;
+        font-weight: 300 !important;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 0.6rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin: 0 0 0.6rem;
+    }
+}
+
+
+/* Avoid arrows on number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

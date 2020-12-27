@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Credit
+{% endblock %}
+
+{% block main %}
+    <h3>Credit Card Number Check</h3>
+    
+    <form action="/credit" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="number" placeholder="Credit Card Number" type="number" required>
+        </div>
+        <button class="btn submit-btn" type="submit">Check</button>
+    </form>
+
+    {% if number %}
+        <h3 style="margin-top: 40px">Previous number:</h4>
+
+        <p>{{ number }} <i  style="color:#ffb86c">{{ "(" + result + ")" }}</i></p>
+
+    {% endif %}
+{% endblock %}
