@@ -17,6 +17,8 @@
 
   <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
 
+  <img src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/>
+
   <img src ="https://img.shields.io/badge/sqlite-%2307405e.svg?&style=for-the-badge&logo=sqlite&logoColor=white"/>
 </p>
 
@@ -26,6 +28,7 @@ All my Problem Sets from CS50, the Havard University online introdutory course o
 
 ## :desktop_computer: Problem Sets
 
+- [Final Project](https://github.com/bruno-fialho/cs50/tree/master/final)
 - [Pset 1](https://github.com/bruno-fialho/cs50/tree/master/pset1)
 - [Pset 2](https://github.com/bruno-fialho/cs50/tree/master/pset2)
 - [Pset 3](https://github.com/bruno-fialho/cs50/tree/master/pset3)
